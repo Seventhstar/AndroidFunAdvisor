@@ -8,16 +8,12 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
-
-import java.util.Random;
 
 import com.example.funadvisor.R;
 
-import static androidx.lifecycle.ViewModelProviders.*;
+import java.util.Random;
 
 public class BallFragment extends Fragment {
 
@@ -36,21 +32,13 @@ public class BallFragment extends Fragment {
 
         btn = root.findViewById(R.id.button_play_ball);
 
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int i = new Random().nextInt(Ball.answers.length);
-                String answer = Ball.answers[i];
-                answerText.setText(answer);
-            }
+        btn.setOnClickListener(view -> {
+            int i = new Random().nextInt(Ball.answers.length);
+            String answer = Ball.answers[i];
+            answerText.setText(answer);
         });
 
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                answerText.setText(s);
-            }
-        });
+        notificationsViewModel.getText().observe(getViewLifecycleOwner(), s -> answerText.setText(s));
         return root;
     }
 }

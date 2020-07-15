@@ -1,13 +1,9 @@
 package com.example.funadvisor.Models;
 
-import android.app.Application;
-
 import androidx.lifecycle.MutableLiveData;
 
-import com.example.funadvisor.service.RestApiService;
-import com.example.funadvisor.service.RetrofitInstance;
-
-import java.io.IOException;
+import com.example.funadvisor.service.QuoteRestApiService;
+import com.example.funadvisor.service.QuoteRetrofitInstance;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -21,7 +17,7 @@ public class QuoteRepository {
     }
 
     public MutableLiveData<Quote> getMutableLiveData() {
-        RestApiService apiService = RetrofitInstance.getApiService();
+        QuoteRestApiService apiService = QuoteRetrofitInstance.getApiService();
 
         Call<Quote> call = apiService.getQuote();
         call.enqueue(new Callback<Quote>() {

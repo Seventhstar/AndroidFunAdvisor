@@ -6,7 +6,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 
-public interface RestApiService {
+public interface QuoteRestApiService {
     @GET("?method=getQuote&format=json")
     Call<Quote> getQuote();
 }
