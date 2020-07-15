@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_coin"
+        android:icon="@drawable/ic_coin"
+        android:title="@string/title_coin" />
+
+    <item
+        android:id="@+id/navigation_hex"
+        android:icon="@drawable/ic_iching_hexagram_17"
+        android:title="@string/title_hex" />
+
+    <item
+        android:id="@+id/navigation_ball"
+        android:icon="@drawable/ic_06_pool"
+        android:title="@string/title_ball" />
+
+    <item
+        android:id="@+id/navigation_quote"
+        android:icon="@drawable/ic_quote"
+        android:title="@string/title_quote" />
+
+</menu>

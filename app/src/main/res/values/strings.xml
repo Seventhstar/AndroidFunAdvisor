@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FunAdvisor</string>
+    <string name="title_coin">Монетки</string>
+    <string name="title_hex">И цзин</string>
+    <string name="title_ball">Шар</string>
+    <string name="hex_button_start">Новый</string>
+    <string name="magic_ball">Магический шар</string>
+    <string name="ball_button_start">Хочу ответ</string>
+    <string name="description">Описание</string>
+    <string name="title_quote">Цитата</string>
+    <string name="quote">Цитата</string>
+    <string name="get_quote">Получить цитату</string>
+    <string name="drop_coin">Бросить монетку</string>
+</resources>

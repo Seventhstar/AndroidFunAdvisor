@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_coin">
+
+    <fragment
+        android:id="@+id/navigation_coin"
+        android:name="com.example.funadvisor.ui.home.CoinFragment"
+        android:label="@string/title_coin"
+        tools:layout="@layout/fragment_coin" />
+
+    <fragment
+        android:id="@+id/navigation_hex"
+        android:name="com.example.funadvisor.ui.Hexagram.HexFragment"
+        android:label="@string/title_hex"
+        tools:layout="@layout/fragment_hex" />
+
+    <fragment
+        android:id="@+id/navigation_ball"
+        android:name="com.example.funadvisor.ui.MagicBall.BallFragment"
+        android:label="@string/title_ball"
+        tools:layout="@layout/fragment_ball" />
+
+    <fragment
+        android:id="@+id/navigation_quote"
+        android:name="com.example.funadvisor.ui.Quote.QuoteFragment"
+        android:label="@string/quote"
+        tools:layout="@layout/fragment_quote" />
+</navigation>
